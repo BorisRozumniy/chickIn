@@ -1,0 +1,138 @@
+
+body{
+	background: linear-gradient(90deg, #fe4, #c5d, #fe4);
+}
+body * {
+	margin: 5px 10px;
+	transition: all 0.3s ease;
+}
+.wrap{
+	border-radius: 3px;
+	box-shadow: 0 0 5px 0;
+	background: #ff5;
+	padding: 20px;
+}
+.wrap input{
+	display: block;
+	min-width: 300px;
+}
+button{
+	border-style: none;
+	padding: 9px;
+	background: linear-gradient(#fe5, #4ff);
+}
+button:hover, button:focus{
+	box-shadow: 0 0 6px 0;
+	outline: none;
+	transform: scale(1.2);
+}
+button:active{
+	box-shadow: 0 0 6px 0 inset;
+}
+
+.wrap button{
+	border-radius: 0  13px 0 13px;
+}
+.wrap button:active{
+	background: linear-gradient(#4ff, #fe5);
+}
+
+#showLocalBtn{
+	position: fixed;
+	top: 50%;
+	right: -63px;
+	transform: rotate(90deg);
+	border-radius: 50%;
+	height: 130px;
+	width: 130px;
+	opacity: 0.4;
+	display: flex;
+	align-content: flex-start;
+	z-index: 1;
+}
+#showLocalBtn:hover{
+	opacity: 1;
+	animation: swing 0.6s ease;
+	animation-iteration-count: 1;
+	transform: rotate(0deg);
+}
+
+#showLocalBtn:active{
+	animation: swing 0.6s ease;
+	animation-iteration-count: 1;
+	transform: rotate(-90deg);
+}
+
+#showLocalBtn span{
+	transform: rotate(-90deg);
+}
+#showLocalBtn span:hover{
+	transform: rotate(0deg);
+}
+#showLocalBtn span:active{
+	transform: rotate(90deg);
+}
+
+.from-store {
+	background: aliceblue;
+	border-radius: 2px;
+	box-shadow: 0 0 5px 0 ;
+	display: flex;
+	overflow: auto;
+	position: absolute;
+	height: 60%;
+
+}
+	.from-store thead{
+		background: #fff;
+		margin: 0;
+	}
+	/*.form-store tbody {
+	overflow: auto;
+	position: absolute;
+	height: 100px;
+
+	}*/
+	.from-store tr:nth-child(2n) {
+		background: #dbecf8;
+	}
+	
+	/*.from-store td:last-child{
+		border-right: none;
+	}*/
+
+
+	::-webkit-scrollbar-button { 
+	background-image:url(''); 
+	background-repeat:no-repeat; 
+	width:6px; 
+	height:0px 
+	} 
+
+	::-webkit-scrollbar-track { 
+	background-color:#32312e; 
+	box-shadow:0px 0px 3px #000 inset; 
+	} 
+
+	::-webkit-scrollbar-thumb { 
+	-webkit-border-radius: 5px; 
+	border-radius: 5px; 
+	background-color:#ffcb17; 
+	box-shadow:0px 1px 1px #fff inset; 
+	background-image:url('https://yraaa.ru/_pu/24/59610063.png'); 
+	background-position:center; 
+	background-repeat:no-repeat; 
+	} 
+
+	::-webkit-resizer{ 
+	background-image:url(''); 
+	background-repeat:no-repeat; 
+	width:7px; 
+	height:0px 
+	} 
+
+	::-webkit-scrollbar{ 
+	width: 11px; 
+	}
+
+
